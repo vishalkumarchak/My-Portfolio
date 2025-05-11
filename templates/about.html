@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About | Vishal Chak{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-light" id="about" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-5">About Me</h2>
+    <div class="row align-items-center g-4">
+      <div class="col-md-5 text-center">
+        <img src="{% static 'assets/images/vishal-profile.jpeg' %}" alt="Vishal Chak" class="img-fluid rounded-4 shadow-lg">
+      </div>
+      <div class="col-md-7">
+        <p class="lead">I'm a passionate <strong>Python Full Stack Developer</strong> with hands-on experience in developing scalable web apps using Django, PostgreSQL, HTML, CSS, and JavaScript.</p>
+        <p>I’ve worked on real-world projects including an e-commerce site and a real estate portal with secure authentication and RESTful APIs.</p>
+
+        <h4 class="mt-4">🎓 Education</h4>
+        <ul class="list-unstyled">
+          <li>• M.C.A. – Kamla Nehru Institute of Technology, Sultanpur (2024)</li>
+          <li>• B.Sc. Computer Science – J.S University, Shikohabad, Firozabad</li>
+        </ul>
+
+        <h4 class="mt-4">💼 Experience</h4>
+        <ul class="list-unstyled">
+          <li>• Intern – SAS Tech Studio Pvt. Ltd., Gurgaon, Haryana</li>
+          <li>• Intern – DUCAT Pvt. Ltd., Gurgaon, Haryana</li>
+        </ul>
+
+        <a href="{% static 'assets/Vishal_Chak_CV.pdf' %}" class="btn btn-primary mt-4" download>
+          <i class="bi bi-download me-1"></i>Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

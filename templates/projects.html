@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Projects | Vishal Chak{% endblock %}
+
+{% block content %}
+<section class="py-5" id="projects">
+  <div class="container">
+    <h2 class="mb-4 text-center">Projects</h2>
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="{% static 'assets/project1.jpg' %}" class="card-img-top" alt="RoyalXLite E-commerce">
+          <div class="card-body">
+            <h5 class="card-title">RoyalXLite E-commerce</h5>
+            <p class="card-text">Django-powered shop with real-time discounts & bank offers.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://github.com/vishalkumarchak/Royalshopping" target="_blank" class="btn btn-dark">GitHub</a>
+              <a href="https://yourdomain.com/royalxlite" target="_blank" class="btn btn-outline-primary">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="{% static 'assets/project2.jpg' %}" class="card-img-top" alt="Real Estate Portal">
+          <div class="card-body">
+            <h5 class="card-title">Real Estate Portal</h5>
+            <p class="card-text">Buy/Sell/Rent homes with JWT login and email verification.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://github.com/yourusername/realestate" target="_blank" class="btn btn-dark">GitHub</a>
+              <a href="#" target="_blank" class="btn btn-outline-primary">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endblock %}
