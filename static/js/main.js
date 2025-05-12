@@ -9,3 +9,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+
+const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    const isHidden = mobileMenu.classList.contains('hidden');
+
+    if (isHidden) {
+      mobileMenu.classList.remove('hidden');
+      // Trigger animation
+      setTimeout(() => {
+        mobileMenu.classList.remove('scale-y-0');
+        mobileMenu.classList.add('scale-y-100');
+      }, 10);
+    } else {
+      // Start scale animation
+      mobileMenu.classList.remove('scale-y-100');
+      mobileMenu.classList.add('scale-y-0');
+      // Hide after animation ends
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+      }, 300); // match duration-300
+    }
+  });
