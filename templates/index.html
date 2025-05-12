@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 
-<!-- Hero Section -->
+<!-- Hero Section
 <section class="py-5 text-center bg-light" id="hero" data-aos="fade-up">
   <div class="container">
     <h1 class="display-4 fw-bold">Hi, I'm <span class="text-primary">Vishal Chak</span></h1>
@@ -10,6 +10,26 @@
     <div class="d-flex justify-content-center flex-wrap gap-3">
       <a href="{% url 'projects' %}" class="btn btn-primary btn-lg">View Projects</a>
       <a href="{% url 'contact' %}" class="btn btn-outline-dark btn-lg">Contact Us</a>
+    </div>
+  </div>
+</section> -->
+<!-- Hero Section -->
+<section class="py-5 text-center bg-light" id="hero" data-aos="fade-up">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Hi, I'm <span class="text-primary">Vishal Chak</span></h1>
+    <p class="lead mb-4">Python Full Stack Developer | Django | MySQL | PostgreSQL | React | RESTful APIs</p>
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+      <a href="{% url 'projects' %}" class="btn btn-outline-primary btn-lg">View Projects</a>
+      <a href="{% url 'contact' %}" class="btn btn-outline-primary btn-lg">Contact Us</a>
+      <a href="{% static 'assets/resume.pdf' %}" class="btn btn-outline-primary btn-lg" download>Download Resume</a>
+    </div>
+    <div class="mt-4">
+      <a href="https://github.com/vishalkumarchak" target="_blank" class="btn btn-outline-dark btn-lg">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/vishal-chak" target="_blank" class="btn btn-outline-primary btn-lg">
+        <i class="bi bi-linkedin"></i>
+      </a>
     </div>
   </div>
 </section>
@@ -23,7 +43,7 @@
       using Django and PostgreSQL. I've also developed real-world projects like an e-commerce store and a real estate
       portal.
     </p>
-    <a href="{% url 'about' %}" class="btn btn-secondary mt-3">Learn More</a>
+    <a href="{% url 'about' %}" class="btn btn-outline-secondary mt-3">Learn More</a>
   </div>
 </section>
 
@@ -33,59 +53,59 @@
     <h2 class="mb-4 text-center">Skills</h2>
     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4 text-center">
         <div class="col">
-          <img src="{% static 'assets/icons/python.png' %}" alt="Python" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/python.png' %}" alt="Python" class="img-fluid mb-2 w-16 mx-auto" />
           <p>Python</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/django-icon.svg' %}" alt="Django" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/django-icon.svg' %}" alt="Django" class="img-fluid mb-2 w-16 mx-auto" />
           <p>Django</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/mysql.png' %}" alt="MySQL" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/mysql.png' %}" alt="MySQL" class="img-fluid mb-2 w-16 mx-auto" />
           <p>MySQL</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/postgresql.jpg' %}" alt="PostgreSQL" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/postgresql.jpg' %}" alt="PostgreSQL" class="img-fluid mb-2 w-16 mx-auto" />
           <p>PostgreSQL</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/mongodb.png' %}" alt="MongoDB" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/mongodb.png' %}" alt="MongoDB" class="img-fluid mb-2 w-16 mx-auto" />
           <p>MongoDB</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/html.png' %}" alt="HTML" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/html.png' %}" alt="HTML" class="img-fluid mb-2 w-16 mx-auto" />
           <p>HTML5</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/css.jpg' %}" alt="CSS" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/css.jpg' %}" alt="CSS" class="img-fluid mb-2 w-16 mx-auto" />
           <p>CSS3</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/js.png' %}" alt="JavaScript" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/js.png' %}" alt="JavaScript" class="img-fluid mb-2 w-16 mx-auto" />
           <p>JavaScript</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/jQuery.svg' %}" alt="jQuery" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/jQuery.svg' %}" alt="jQuery" class="img-fluid mb-2 w-16 mx-auto" />
           <p>jQuery</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/tailwindcss.png' %}" alt="Tailwind CSS" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/tailwindcss.png' %}" alt="Tailwind CSS" class="img-fluid mb-2 w-16 mx-auto" />
           <p>Tailwind CSS</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/react.webp' %}" alt="React" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/react.webp' %}" alt="React" class="img-fluid mb-2 w-16 mx-auto" />
           <p>React JS</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/git.png' %}" alt="Git" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/git.png' %}" alt="Git" class="img-fluid mb-2 w-16 mx-auto" />
           <p>Git</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/github.webp' %}" alt="GitHub" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/github.webp' %}" alt="GitHub" class="img-fluid mb-2 w-16 mx-auto" />
           <p>GitHub</p>
         </div>
         <div class="col">
-          <img src="{% static 'assets/icons/postman.jpg' %}" alt="Postman" class="img-fluid mb-2" />
+          <img src="{% static 'assets/icons/postman.jpg' %}" alt="Postman" class="img-fluid mb-2 w-16 mx-auto" />
           <p>Postman</p>
         </div>
     </div>
@@ -103,7 +123,7 @@
           <div class="card-body">
             <h5 class="card-title">RoyalXLite E-commerce</h5>
             <p class="card-text">A Django-powered shop with real-time discounts and secure payment integration.</p>
-            <a href="https://github.com/vishalkumarchak/Royalshopping" class="btn btn-dark" target="_blank">GitHub</a>
+            <a href="https://github.com/vishalkumarchak/Royalshopping" class="btn btn-outline-dark" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
@@ -114,13 +134,13 @@
             <h5 class="card-title">Real Estate Portal</h5>
             <p class="card-text">JWT-authenticated platform to buy, sell and rent properties with secure email
               communication.</p>
-            <a href="https://github.com/yourusername/realestate" class="btn btn-dark" target="_blank">GitHub</a>
+            <a href="https://github.com/yourusername/realestate" class="btn btn-outline-dark" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
     </div>
     <div class="text-center">
-      <a href="{% url 'projects' %}" class="btn btn-primary mt-4">See All Projects</a>
+      <a href="{% url 'projects' %}" class="btn btn-outline-primary mt-4">See All Projects</a>
     </div>
   </div>
 </section>
@@ -148,7 +168,7 @@
         <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
       </div>
       <div class="col-12 text-center">
-        <button type="submit" class="btn btn-success px-4">Send Message</button>
+        <button type="submit" class="btn btn-outline-success px-4">Send Message</button>
       </div>
     </form>
   </div>
